@@ -1,16 +1,25 @@
 import React from 'react'
 
 //importing components into app
-import Article from './components/article/Article'
-import Brand from './components/brand/Brand'
-import CTA from './components/cta/CTA'
-import Feature from './components/feature/Feature'
-import Navbar from './components/navbar/Navbar'
+import { Blog, Features, Footer, Possibility, WhatGPT3, Header } from './containers'
+import { CTA, Brand, Navbar } from './components'
+import './App.css'
+
 
 const app = () => {
   return (
-    <div>
-      <h1>Jessica</h1>
+    <div className='App'>
+      <div className='gradient_bg'>
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
     </div>
   )
 }
